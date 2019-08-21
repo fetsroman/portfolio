@@ -1,0 +1,244 @@
+html{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  min-height: 100%;
+  height: auto;
+  min-width: 100vw;
+  background-color: #FEFAF7;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden !important;;
+}
+
+section{
+  padding-bottom: 150px;
+}
+
+hr{
+  /* width: 100%; */
+  border: 1px solid #6D7282;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 3em; /* or 48px */
+  color: #5F6472;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 2.25em; /* or 36px */
+  color: #5F6472;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+}
+
+h4{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  font-size: 1em; /* or 16px */
+  color: #5F6472;
+}
+
+h5{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ADA0A6;
+}
+
+h6{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  font-size: 0.875em; /* or 14px */
+  line-height: 1.438em;  /* 150% or 24px */
+  color: #ADA0A6;
+}
+
+p{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1em; /* or 16px */
+  color: #5F6472;
+}
+
+ul{
+  padding-left: 20px;
+  margin: 30px 0;
+}
+
+li{
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-size: 1em; /* or 16px */
+  line-height: 200%; /* or 32px */
+  color: #5F6472;
+  list-style: none;
+}
+
+li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #5F6472; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.icon{
+  fill: #ADA0A6;
+  font-size: 1.2rem;
+  margin: 20px 30px 20px 0px;
+}
+
+.icon-viber, .icon-telegram{
+  margin: 0 10px;
+}
+
+.inline-block{
+  display: inline-block !important;
+}
+
+a .icon-viber, a .viber, a .icon-telegram, a .telegram, a .icon-instagram, a .icon-facebook, a .icon-vimeo{
+  transition: 0.4s;
+}
+
+a:hover .icon-viber, a:hover .viber{
+  fill: #8074d6;
+  color: #8074d6;
+  transition: 0.4s;
+}
+
+a:hover .icon-telegram,  a:hover .telegram{
+  fill: #0088cc;
+  color: #0088cc;
+  transition: 0.4s;
+}
+
+a:hover .icon-instagram{
+  fill: #C13584;
+  transition: 0.4s;
+}
+
+a:hover .icon-facebook{
+  fill: #4267b2;
+  transition: 0.4s;
+}
+
+a:hover .icon-vimeo{
+  fill: rgb(26, 46, 59);
+  transition: 0.4s;
+}
+
+.navbar-toggler{
+  display: inline-block !important;
+  color: #5F6472;
+}
+
+nav{
+  color: #5F6472;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer{
+  /* left: 0; */
+  bottom: 0;
+  width: 100%;
+  background-color: #5F6472;
+  position: absolute; 
+  margin: 0;
+}
+
+footer p, footer a{
+  color: #FFFFFF;
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mail-link{
+  color: #FFFFFF;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.mail-link:hover{
+  color: #5B9DF4;
+  transition: 0.4s;
+}
+
+footer .icon{
+  color: #ADA0A6;
+}
+
+footer hr{
+  margin-top: 15px;
+}
+
+.movadex{
+  color: #FFFFFF;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.movadex:hover{
+  color: #ff6a71;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.btn-custom{
+  width: 10rem; /* or 160px */
+  background: #2F80ED;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  font-size: 0.875em; /* 14px */
+  color: #FEFEFE;
+  padding: 12px 0px;
+  margin: 25px 0;
+}
+
+.btn-custom:hover, .btn-custom:active, .btn-custom:active{
+  background: #5B9DF4;
+  color: #FEFEFE;
+  transition: 0.4s;
+}
+
+/* MEDIA */
+
+@media(max-width: 576px){
+  h2{
+    font-size: 2em;/* 32px */
+  }
+
+  .icon{
+    margin: 10px 15px 10px 15px;
+  }
+
+  .icon-telegram, .icon-viber{
+    margin: 0;
+  }
+
+  nav.container{
+    /*padding-top: 55px;*/
+    /*padding-bottom: 20px;*/
+    margin-bottom: 20px;
+    background: #F9F5F3;
+  }
+
+  footer hr{
+    display: none;
+  }
+}

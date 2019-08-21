@@ -1,0 +1,25 @@
+.price{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0deg, rgba(243, 242, 242, 0.95), rgba(243, 242, 242, 0.95)), url(../img/price_foto.jpg);
+  padding-top: 50px;
+}
+
+.price-text{
+  font-size: 2.25em; /* or 36px */
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.price-decs{
+  color: #9D8E95;
+  margin: 20px 0;
+}
+
+@media(max-width: 576px){
+  .price{
+    padding-bottom: 250px;
+  }
+
+  
+}

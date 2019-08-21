@@ -1,0 +1,103 @@
+.card-title{
+  font-size: 1.5em; /* or 24px */
+}
+
+.card-desc{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  color: #ADA0A6;
+}
+
+.card{
+  background: none;
+  border: none;
+}
+
+.video-btn{
+  background: none;
+  border: none;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+}
+
+.video-btn svg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.video-btn img{
+  max-width: 100%;
+}
+
+.modal-content{
+  background: none;
+  border: none;
+}
+
+.modal-header{
+  background: none;
+}
+
+/* .modal-header button{
+  color: #5F6472;
+} */
+
+.close{
+  text-shadow: none;
+}
+
+.modal-title{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1.5em; /* or 24px */
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding:0px;
+  background: rgba(254, 250, 247, 0.8);
+}
+
+.modal-footer{
+  background: rgba(254, 250, 247, 0.8);
+  padding: 30px;
+}
+
+.close {
+  position: absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+@media(max-width: 768px){}
+
+@media(max-width: 576px){
+  .portfolio{
+    padding-bottom: 0;
+  }
+
+  .video-btn svg{
+    left: 47.5%;
+    /*top: 26%;*/
+  }
+
+  .close{
+    right: 5px;
+  }
+}
